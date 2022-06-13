@@ -1,19 +1,55 @@
 @font-face {
-  font-family: "Inter";
-  src: url("catppuccin/Inter-Light.ttf") format("truetype");
+  font-family: "Cascadia Mono";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Cascadia Mono Regular"), local("CascadiaMono-Regular"), url("catppuccin/CascadiaMono-Regular.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: "Inter";
-  src: url("catppuccin/Inter-Regular.ttf") format("truetype");
+  font-family: "Cascadia Mono";
+  font-style: italic;
+  font-weight: normal;
+  src: local("Cascadia Mono Italic"), local("CascadiaMono-Italic"), url("catppuccin/CascadiaMono-Italic.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: "Inter";
-  src: url("catppuccin/Inter-Medium.ttf") format("truetype");
+  font-family: "Cascadia Mono";
+  font-style: normal;
+  font-weight: bold;
+  src: local("Cascadia Mono Bold"), local("CascadiaMono-Bold"), url("catppuccin/CascadiaMono-Bold.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: "Inter";
-  src: url("catppuccin/Inter-Bold.ttf") format("truetype");
+  font-family: "Cascadia Mono";
+  font-style: italic;
+  font-weight: bold;
+  src: local("Cascadia Mono Bold Italic"), local("CascadiaMono-BoldItalic"), url("catppuccin/CascadiaMono-BoldItalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Open Sans Regular"), local("OpenSans-Regular"), url("catppuccin/OpenSas-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: italic;
+  font-weight: normal;
+  src: local("Open Sans Italic"), local("OpenSans-Italic"), url("catppuccin/OpenSas-Italic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: bold;
+  src: local("Open Sans Bold"), local("OpenSans-Bold"), url("catppuccin/OpenSas-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: italic;
+  font-weight: bold;
+  src: local("Open Sans Bold Italic"), local("OpenSans-BoldItalic"), url("catppuccin/OpenSas-BoldItalic.ttf") format("truetype");
 }
