@@ -15,21 +15,17 @@
   <img src="https://raw.githubusercontent.com/catppuccin/catppuccin/dev/assets/misc/sample.png"/>
 </p>
 
-## Usage
+## Installation
 
-1. Clone this repository locally
-2. Open the app's settings
-3. Select `import theme` and browse to where you cloned Catppuccin
-4. Select it
+1. Download the [latest version](https://github.com/catppuccin/typora/releases/latest) and extract
 
-## 🙋 FAQ (optional)
+2. Open `File/Preferences` > `Appearance` > `Open Theme Folder`
 
-- Q: **_"Where can I find the doc?"_**
-  A: Run `:help theme`
+4. Copy `catppuccin/` and `catppuccin.css` to that folder
 
 ## 💝 Thanks to
 
-- [Human](https://github.com/catppuccin)
+- [felpofo](https://github.com/felpofo)
 
 &nbsp;
 
