@@ -1,0 +1,41 @@
+@use "fonts";
+@import "mocha";
+
+:root {
+  /* Typora Variables */
+  --bg-color: #{$base};
+  --text-color: #{$text};
+  --md-char-color: #{$peach};
+  --meta-content-color: #{$rosewater};
+
+  --primary-color: #{$surface0};
+  --primary-btn-border-color: #{$surface1};
+  --primary-btn-text-color: #{$text};
+
+  --window-border: 1px solid #{$overlay0};
+
+  --active-file-bg-color: #{$overlay1};
+  --active-file-text-color: inherit;
+  --active-file-border-color: #{$overlay0};
+
+  --side-bar-bg-color: #{$base};
+  --item-hover-bg-color: #8e95b396;
+  --item-hover-text-color: inherit;
+  --monospace: monospace;
+}
+
+html, body {
+  background-color: #{$base};
+  font-family: "Inter", sans-serif;
+}
+
+html {
+  font-size: 14px;
+}
+
+
+#write {
+  max-width: 90%; /*adjust size of the wriring area*/
+  font-size: 1rem; /*basic font size*/
+  color: #{$text}; /*basic font color*/
+}
