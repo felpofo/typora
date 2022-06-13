@@ -1,0 +1,19 @@
+{
+  "name": "catppuccin-typora",
+  "version": "1.0.0",
+  "private": true,
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "node-sass --output-style expanded --indent-type space --indent-width 2 --linefeed lf src/catppuccin.scss -o dist",
+    "dev": "yarn clean && yarn build --watch",
+    "clean": "rm -rf dist"
+  },
+  "repository": "git@github.com:felpofo/typora",
+  "author": "felpofo <felipepitolpuhl@gmail.com>",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
