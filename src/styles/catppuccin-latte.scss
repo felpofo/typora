@@ -5,37 +5,136 @@
   /* Typora Variables */
   --bg-color: #{$base};
   --text-color: #{$text};
-  --md-char-color: #{$peach};
-  --meta-content-color: #{$rosewater};
+  --md-char-color: #{$overlay1}; // characters that float when cursor is over
+  --meta-content-color: #{$blue}; // eg. links inside this [some text](link with that color)
+  --select-text-font-color: #{$subtext1};
+  // --primary-color: #{$surface0};
+  // --primary-btn-border-color: #{$surface1};
+  // --primary-btn-text-color: #{$text};
 
-  --primary-color: #{$surface0};
-  --primary-btn-border-color: #{$surface1};
-  --primary-btn-text-color: #{$text};
+  // --window-border: 1px solid #{$overlay0};
 
-  --window-border: 1px solid #{$overlay0};
+  // --active-file-bg-color: #{$overlay1};
+  // --active-file-text-color: inherit;
+  // --active-file-border-color: #{$overlay0};
 
-  --active-file-bg-color: #{$overlay1};
-  --active-file-text-color: inherit;
-  --active-file-border-color: #{$overlay0};
+  // --side-bar-bg-color: #{$base};
+  // --item-hover-bg-color: 0;
+  // --item-hover-text-color: inherit;
+  --monospace: "Cascadia Mono", "Fira Code",  monospace;
 
-  --side-bar-bg-color: #{$base};
-  --item-hover-bg-color: #8e95b396;
-  --item-hover-text-color: inherit;
-  --monospace: monospace;
-}
-
-html, body {
-  background-color: #{$base};
-  font-family: "Inter", sans-serif;
+  // --blur-text-color: #C8C8C8;
+  // --drag-placeholder-color: #c7c5c5;
+  // --panel-border-color: #777777;
+  // --active-toggle-btn-color: #ddd;
+  // --table-border-color: #ccc;
+  // --primary-color: #428bca;
+  // --primary-btn-border-color: #285e8e;
+  // --primary-btn-text-color: #fff;
+  // --search-select-bg-color: #000;
+  // --search-select-text-color: #fff;
+  // --heading-char-color: #ddd;
+  // --color-popover-bg-color: #fafafa;
+  // --control-text-color: var(--text-color);
+  // --control-text-hover-color: var(--text-color);
+  --window-border: none;
+  // --active-file-bg-color: #eee;
+  // --active-file-text-color: inherit;
+  // --active-file-border-color: #777;
+  // --focus-ring-color: #6eace2;
+  // --side-bar-bg-color: var(--bg-color);
+  // --item-hover-bg-color: rgba(229, 229, 229, 0.59);
+  // --item-hover-text-color: inherit;
+  // --side-bar-menu-active-tint: var(--side-bar-menu-active-tint);
+  // --mac-title-bar-height: 20px;
+  // --sidebar-width: 270px;
+  // --rawblock-edit-panel-bd: #f5f6f7;
 }
 
 html {
-  font-size: 14px;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
 }
 
+body {
+  font-family: "Cascadia Mono", "Open Sans", sans-serif;
+  
+  color: #{$text};
+  line-height: 1.3;
+}
 
+// Only -write area- styles
 #write {
-  max-width: 90%; /*adjust size of the wriring area*/
-  font-size: 1rem; /*basic font size*/
-  color: #{$text}; /*basic font color*/
+  max-width: 75%;
+
+  padding: 40px 20px 60px 20px;
+
+  font-size: 1rem;
+  color: #{$text};
+}
+
+// Global styles
+a {
+  color: #{$rosewater};
+  text-decoration: none;
+}
+
+blockquote {
+  margin: 0.8em 0;
+  padding: 0 15px;
+
+  color: #{$subtext0};
+  background-color: #{$mantle};
+  
+  border-left: 4px solid #{$subtext0};
+  border-radius: .25rem;
+
+  & & {
+    padding-right: 0;
+  }
+}
+
+h1, h2, h3, h4 {
+  margin: 8px 0;
+}
+
+h1 {
+  margin: 3rem 0 1.75rem 0;
+  padding: 20px 30px;
+
+  font-weight: bold;
+  font-size: 2.8rem;
+  line-height: 4.4rem;
+  text-align: center;
+}
+
+h2 {
+  margin: 2rem 0 1.5rem 0;
+  padding: 0 30px;
+
+  font-weight: normal;
+  font-size: 2.2rem;
+  line-height: 3.6rem;
+  text-align: center;
+}
+
+hr {
+  height: 2px;
+
+  padding: 0;
+  margin: 16px 4px;
+  border: 0 none;
+  box-sizing: content-box;
+
+  background-color: #{$overlay0};
+
+  overflow: hidden;
+}
+
+// Source Code Mode
+.cm-s-typora-default {
+  .cm-header { color: #{$flamingo}; }
+  .cm-property { color: #{$yellow}; }
+  .cm-atom, .cm-number { color: #{$sapphire}; }
+  .cm-code, .cm-comment { color: #{$lavender}; }
 }
