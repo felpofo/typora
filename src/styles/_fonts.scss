@@ -27,6 +27,20 @@
 }
 
 @font-face {
+  font-family: "Cascadia Code";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Cascadia Code Regular"), local("CascadiaCode-Regular"), url("catppuccin/CascadiaCode-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Cascadia Code";
+  font-style: normal;
+  font-weight: bold;
+  src: local("Cascadia Code Regular"), local("CascadiaCode-Regular"), url("catppuccin/CascadiaCode-Regular.ttf") format("truetype");
+}
+
+@font-face {
   font-family: "Open Sans";
   font-style: normal;
   font-weight: normal;
