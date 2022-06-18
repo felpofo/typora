@@ -2,15 +2,15 @@
 @import "latte";
 
 @mixin codeStyles() {
-  .cm-comment { color: #{$subtext1}; }
-  .cm-keyword { color: #{$red}; }
-  .cm-def { color: #{$text}; }
-  .cm-type { color: #{$peach}; }
-  .cm-operator { color: #{$red}; }
-  .cm-variable { color: #{$peach}; }
-  .cm-property { color: #{$text}; }
-  .cm-string { color: #{$green}; }
-  .cm-number { color: #{$peach}; }
+  .cm-comment { color: $subtext1 }; 
+  .cm-keyword { color: $red }; 
+  .cm-def { color: $text }; 
+  .cm-type { color: $peach }; 
+  .cm-operator { color: $red }; 
+  .cm-variable { color: $peach }; 
+  .cm-property { color: $text }; 
+  .cm-string { color: $green }; 
+  .cm-number { color: $peach }; 
 }
 
 :root {
@@ -22,17 +22,17 @@
   --select-text-font-color: #{$subtext1};
   --window-border: none;
   --monospace: "Cascadia Code", "Fira Code", "Cascadia Mono", monospace;
-  // --primary-color: #{$surface0};
-  // --primary-btn-border-color: #{$surface1};
-  // --primary-btn-text-color: #{$text};
+  // --primary-color: $surface0;
+  // --primary-btn-border-color: $surface1;
+  // --primary-btn-text-color: $text;
 
-  // --window-border: 1px solid #{$overlay0};
+  // --window-border: 1px solid $overlay0;
 
-  // --active-file-bg-color: #{$overlay1};
+  // --active-file-bg-color: $overlay1;
   // --active-file-text-color: inherit;
-  // --active-file-border-color: #{$overlay0};
+  // --active-file-border-color: $overlay0;
 
-  // --side-bar-bg-color: #{$base};
+  // --side-bar-bg-color: $base;
   // --item-hover-bg-color: 0;
   // --item-hover-text-color: inherit;
 
@@ -70,7 +70,7 @@ html {
   body {
     font-family: "Cascadia Mono", "Open Sans", sans-serif;
     
-    color: #{$text};
+    color: $text;
     line-height: 1.3;
   }
 }
@@ -81,15 +81,15 @@ html {
   padding: 40px 20px 60px 20px;
 
   font-size: 1rem;
-  color: #{$text};
+  color: $text;
 
   a {
-    color: #{$rosewater};
+    color: $rosewater;
     text-decoration: none;
   }
 
   strong, em, del, u {
-    color: #{$highlighted-text};
+    color: $highlighted-text;
   }
 
   h1, h2, h3, h4 {
@@ -124,7 +124,7 @@ html {
     border: 0 none;
     box-sizing: content-box;
 
-    background-color: #{$overlay0};
+    background-color: $overlay0;
 
     overflow: hidden;
   }
@@ -137,10 +137,10 @@ html {
     margin: 0.6em 0;
     padding: .2rem 8px 0 12px;
 
-    color: #{$subtext0};
-    background-color: #{$mantle};
+    color: $subtext0;
+    background-color: $mantle;
     
-    border-left: 4px solid #{$subtext0};
+    border-left: 4px solid $subtext0;
     border-radius: 4px;
 
     & & {
@@ -148,10 +148,19 @@ html {
       padding: .1rem 0 0 12px;
     }
   }
+  
+  code {
+    padding: 4px;
+    
+    border-radius: 2px;
+    
+    background-color: $mantle;
+    color: $yellow;
+  }
 
   .md-expand {
     > :not(span) {
-      color: #{$rosewater};
+      color: $rosewater;
       background-color: transparent;
       
       text-decoration: none;
@@ -167,37 +176,37 @@ html {
 
 #typora-source {
   .CodeMirror-cursor {
-    border-color: #{$surface2} !important;
+    border-color: $surface2 !important;
   }
   
-  .cm-overlay { color: #{$text}; } // blank spaces/code
-  .cm-invalidchar { color: #{$maroon}; } // idk why this exists just ignore it
-  .cm-tab { color: #{$overlay1}; }
+  .cm-overlay { color: $text};  // blank spaces/code
+  .cm-invalidchar { color: $maroon};  // idk why this exists just ignore it
+  .cm-tab { color: $overlay1}; 
   
   // Text decorators
-  .cm-header { color: #{$teal}; }
-  .cm-atom { color: #{$subtext0}; } // blockquote
-  .cm-number { color: #{$subtext0}; } // bugged blockquote tag
-  .cm-link { color: #{$rosewater}; } // links
-  .cm-strong { color: #{$red}; } // bold
-  .cm-em { color: #{$yellow}; } // italic
-  .cm-del { color: #{$overlay1}; } // strike
-  .cm-hr { color: #{$overlay1}; } // horizontal full width line
-  .cm-string { color: #{$overlay1}; }
-  .cm-meta { color: #{$overlay1}; } // checkbox square brackets
-  .cm-comment { color: #{$green}; } // compact code block
-  .cm-tag { color: #{$teal}; } // html tag
-  .cm-attribute { color: #{$yellow}; } // html attribute
-  .cm-bracket { color: #{$overlay1}; } // html brackets
+  .cm-header { color: $teal}; 
+  .cm-atom { color: $subtext0};  // blockquote
+  .cm-number { color: $subtext0};  // bugged blockquote tag
+  .cm-link { color: $rosewater};  // links
+  .cm-strong { color: $red};  // bold
+  .cm-em { color: $yellow};  // italic
+  .cm-del { color: $overlay1};  // strike
+  .cm-hr { color: $overlay1};  // horizontal full width line
+  .cm-string { color: $overlay1}; 
+  .cm-meta { color: $overlay1};  // checkbox square brackets
+  .cm-comment { color: $green};  // compact code block
+  .cm-tag { color: $teal};  // html tag
+  .cm-attribute { color: $yellow};  // html attribute
+  .cm-bracket { color: $overlay1};  // html brackets
 
   .cm-block-start {
-    &.cm-comment { color: #{$subtext1}; } // code block lang and ```
+    &.cm-comment { color: $subtext1};  // code block lang and ```
     &.cm-variable-2 { // list item marker
-      color: #{$teal};
+      color: $teal;
       font-style: italic;
     }
-    &.cm-meta { color: #{$maroon}; } // unmarked checkbox
-    &.cm-property { color: #{$blue}; } // marked checkbox 
+    &.cm-meta { color: $maroon};  // unmarked checkbox
+    &.cm-property { color: $blue};  // marked checkbox 
   }
 }
 
