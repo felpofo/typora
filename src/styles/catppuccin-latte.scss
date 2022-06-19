@@ -1,8 +1,9 @@
 @use "fonts";
 @import "latte";
+@import "general";
 
 @mixin codeStyles() {
-  .cm-comment { color: $subtext1; } 
+  .cm-comment { color: $subtext0; } 
   .cm-keyword { color: $red; } 
   .cm-def { color: $text; } 
   .cm-type { color: $peach; } 
@@ -158,6 +159,53 @@ html {
     color: $yellow;
   }
 
+  table {
+    background-color: $mantle;
+
+    border-collapse: collapse;
+
+    thead {
+      background-color: $crust;
+
+      tr {
+        th:first-child {
+          border-top-left-radius: $table-border-radius;
+        }
+
+        th:last-child {
+          border-top-right-radius: $table-border-radius;
+        }
+      }
+    }
+
+    tbody {
+      tr {
+        border-bottom: $table-border-width solid $crust;
+
+        &:last-child {
+          border-bottom: 0;
+
+          td:first-child {
+            border-bottom-left-radius: $table-border-radius;
+          }
+          
+          td:last-child {
+            border-bottom-right-radius: $table-border-radius;
+          }
+        }
+
+        td {
+          border-style: solid;
+          border-color: $crust;
+          border-width: 0 $table-border-width;
+
+          &:first-child { border-left: 0; }
+          &:last-child { border-right: 0; }
+        }
+      }
+    }
+  }
+
   .md-expand {
     > :not(span) {
       color: $rosewater;
@@ -182,7 +230,7 @@ html {
   .cm-overlay { color: $text; }  // blank spaces/code
   .cm-invalidchar { color: $maroon; }  // idk why this exists just ignore it
   .cm-tab { color: $overlay1; } 
-  
+
   // Text decorators
   .cm-header { color: $teal; } 
   .cm-atom { color: $subtext0; }  // blockquote
@@ -200,7 +248,7 @@ html {
   .cm-bracket { color: $overlay1; }  // html brackets
 
   .cm-block-start {
-    &.cm-comment { color: $subtext1; }  // code block lang and ```
+    &.cm-comment { color: $green; }  // code block lang and ```
     &.cm-variable-2 { // list item marker
       color: $teal;
       font-style: italic;
