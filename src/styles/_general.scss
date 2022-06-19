@@ -1,2 +1,161 @@
+@import "fonts";
+
 $table-border-width: 2px;
 $table-border-radius: 8px;
+
+:root {
+  /* Typora Variables */
+  --window-border: none;
+  --monospace: "Cascadia Code", "Fira Code", "Cascadia Mono", monospace;
+  // --primary-color: $surface0;
+  // --primary-btn-border-color: $surface1;
+  // --primary-btn-text-color: $text;
+
+  // --window-border: 1px solid $overlay0;
+
+  // --active-file-bg-color: $overlay1;
+  // --active-file-text-color: inherit;
+  // --active-file-border-color: $overlay0;
+
+  // --side-bar-bg-color: $base;
+  // --item-hover-bg-color: 0;
+  // --item-hover-text-color: inherit;
+
+  // --blur-text-color: #C8C8C8;
+  // --drag-placeholder-color: #c7c5c5;
+  // --panel-border-color: #777777;
+  // --active-toggle-btn-color: #ddd;
+  // --table-border-color: #ccc;
+  // --primary-color: #428bca;
+  // --primary-btn-border-color: #285e8e;
+  // --primary-btn-text-color: #fff;
+  // --search-select-bg-color: #000;
+  // --search-select-text-color: #fff;
+  // --heading-char-color: #ddd;
+  // --color-popover-bg-color: #fafafa;
+  // --control-text-color: var(--text-color);
+  // --control-text-hover-color: var(--text-color);
+  // --active-file-bg-color: #eee;
+  // --active-file-text-color: inherit;
+  // --active-file-border-color: #777;
+  // --focus-ring-color: #6eace2;
+  // --side-bar-bg-color: var(--bg-color);
+  // --item-hover-bg-color: rgba(229, 229, 229, 0.59);
+  // --item-hover-text-color: inherit;
+  // --side-bar-menu-active-tint: var(--side-bar-menu-active-tint);
+  // --mac-title-bar-height: 20px;
+  // --sidebar-width: 270px;
+  // --rawblock-edit-panel-bd: #f5f6f7;
+}
+
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+
+  body {
+    font-family: "Cascadia Mono", "Open Sans", sans-serif;
+    line-height: 1.3;
+  }
+}
+
+#write {
+  max-width: 75%;
+
+  padding: 40px 20px 60px 20px;
+
+  font-size: 1rem;
+
+  a { text-decoration: none; }
+
+  h1, h2, h3, h4 { margin: 8px 0; }
+
+  h1 {
+    margin: 1.25rem 0;
+    padding: 20px 30px;
+
+    font-weight: bold;
+    font-size: 2.8rem;
+    line-height: 4.4rem;
+    text-align: center;
+  }
+
+  h2 {
+    margin: 1.25rem 0;
+    padding: 0 30px;
+
+    font-weight: normal;
+    font-size: 2.2rem;
+    line-height: 3.6rem;
+    text-align: center;
+  }
+
+  hr {
+    height: 2px;
+
+    padding: 0;
+    margin: 16px 8px;
+    border: 0 none;
+    box-sizing: content-box;
+
+    overflow: hidden;
+  }
+
+  blockquote {
+    margin: 0.6em 0;
+    padding: .2rem 8px 0 12px;
+
+    border-left-width: 4px;
+    border-left-style: solid;
+    border-radius: 4px;
+
+    & & {
+      border-radius: 4px 0 0 4px;
+      padding: .1rem 0 0 12px;
+    }
+  }
+
+  code {
+    padding: 4px;
+    
+    border-radius: 2px;
+  }
+
+  table {
+    border-collapse: collapse;
+
+    thead tr {
+      th:first-child { border-top-left-radius: $table-border-radius; }
+      th:last-child { border-top-right-radius: $table-border-radius; }
+    }
+
+    tbody tr {
+      border-bottom-width: $table-border-width;
+      border-bottom-style: solid;
+
+      &:last-child {
+        border-bottom-width: 0;
+
+        td:first-child { border-bottom-left-radius: $table-border-radius; }
+        td:last-child { border-bottom-right-radius: $table-border-radius; }
+      }
+
+      td {
+        border-style: solid;
+        border-width: 0 $table-border-width;
+
+        &:first-child { border-left: 0; } 
+        &:last-child { border-right: 0; }
+      }
+    }
+  }
+
+  .md-expand > :not(span) {
+    background-color: transparent;
+    
+    text-decoration: none;
+    font-weight: normal;
+    font-style: normal;
+  }
+}
+
+#typora-source .cm-block-start.cm-variable-2 { font-style: italic; }
