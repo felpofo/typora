@@ -2,15 +2,15 @@
 @import "latte";
 
 @mixin codeStyles() {
-  .cm-comment { color: $subtext1 }; 
-  .cm-keyword { color: $red }; 
-  .cm-def { color: $text }; 
-  .cm-type { color: $peach }; 
-  .cm-operator { color: $red }; 
-  .cm-variable { color: $peach }; 
-  .cm-property { color: $text }; 
-  .cm-string { color: $green }; 
-  .cm-number { color: $peach }; 
+  .cm-comment { color: $subtext1; } 
+  .cm-keyword { color: $red; } 
+  .cm-def { color: $text; } 
+  .cm-type { color: $peach; } 
+  .cm-operator { color: $red; } 
+  .cm-variable { color: $peach; } 
+  .cm-property { color: $text; } 
+  .cm-string { color: $green; } 
+  .cm-number { color: $peach; } 
 }
 
 :root {
@@ -179,34 +179,34 @@ html {
     border-color: $surface2 !important;
   }
   
-  .cm-overlay { color: $text};  // blank spaces/code
-  .cm-invalidchar { color: $maroon};  // idk why this exists just ignore it
-  .cm-tab { color: $overlay1}; 
+  .cm-overlay { color: $text; }  // blank spaces/code
+  .cm-invalidchar { color: $maroon; }  // idk why this exists just ignore it
+  .cm-tab { color: $overlay1; } 
   
   // Text decorators
-  .cm-header { color: $teal}; 
-  .cm-atom { color: $subtext0};  // blockquote
-  .cm-number { color: $subtext0};  // bugged blockquote tag
-  .cm-link { color: $rosewater};  // links
-  .cm-strong { color: $red};  // bold
-  .cm-em { color: $yellow};  // italic
-  .cm-del { color: $overlay1};  // strike
-  .cm-hr { color: $overlay1};  // horizontal full width line
-  .cm-string { color: $overlay1}; 
-  .cm-meta { color: $overlay1};  // checkbox square brackets
-  .cm-comment { color: $green};  // compact code block
-  .cm-tag { color: $teal};  // html tag
-  .cm-attribute { color: $yellow};  // html attribute
-  .cm-bracket { color: $overlay1};  // html brackets
+  .cm-header { color: $teal; } 
+  .cm-atom { color: $subtext0; }  // blockquote
+  .cm-number { color: $subtext0; }  // bugged blockquote tag
+  .cm-link { color: $rosewater; }  // links
+  .cm-strong { color: $red; }  // bold
+  .cm-em { color: $yellow; }  // italic
+  .cm-del { color: $overlay1; }  // strike
+  .cm-hr { color: $overlay1; }  // horizontal full width line
+  .cm-string { color: $overlay1; } 
+  .cm-meta { color: $overlay1; }  // checkbox square brackets
+  .cm-comment { color: $green; }  // compact code block
+  .cm-tag { color: $teal; }  // html tag
+  .cm-attribute { color: $yellow; }  // html attribute
+  .cm-bracket { color: $overlay1; }  // html brackets
 
   .cm-block-start {
-    &.cm-comment { color: $subtext1};  // code block lang and ```
+    &.cm-comment { color: $subtext1; }  // code block lang and ```
     &.cm-variable-2 { // list item marker
       color: $teal;
       font-style: italic;
     }
-    &.cm-meta { color: $maroon};  // unmarked checkbox
-    &.cm-property { color: $blue};  // marked checkbox 
+    &.cm-meta { color: $maroon; }  // unmarked checkbox
+    &.cm-property { color: $blue; }  // marked checkbox 
   }
 }
 
